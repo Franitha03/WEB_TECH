@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Travel Bucket List</title>
+    <style>
+       body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #eef6f9;
+    background-image: url("https://pbs.twimg.com/media/F6uajmcXAAAY8Of?format=jpg&name=900x900");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 10px;
+    padding: 10px;
+}
+
+        header {
+            background-color: #d241278e;
+            color: rgb(233, 224, 225);
+            padding: 15px;
+            margin: 15px;
+            text-align: center;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.615);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-family: "Times New Roman", Times, serif;
+        }
+        h2 {
+            color: #bd1526fb;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f0f8ff;
+        }
+
+        img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 6px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .dropzone {
+            border: 2px dashed #2c7abf;
+            padding: 15px;
+            text-align: center;
+            margin-top: 10px;
+            background-color: #f9fcffd2;
+            border-radius: 6px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input, form select {
+            margin-bottom: 10px;
+            padding: 10;
+            width: 50%;
+        }
+
+        input[type=range] {
+            width: 50%;
+        }
+
+        footer {
+            background-color: #2cbf5d22;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1> My Travel Bucket List!</h1>
+</header>
+
+<section>
+  <h2>Top 5 Travel Destinations...</h2>
+  <ol>
+    <li>Edinburgh, Scotland</li>
+    <li>Venice, Italy</li>
+    <li>Bali, Indonesia</li>
+    <li>Greece, Europe</li>
+    <li>Japan, Asia</li>
+
+  </ol>
+  <h2>Things I'd Like to Do...</h2>
+  <ul>
+    <li>Things to do in Edinburgh: Visit castle, walk Royal Mile, hike Arthur’s Seat, go to museum, enjoy festival.</li>
+    <li>Things to do in Venice: Ride gondola, see Basilica, explore Palace, cross Rialto, eat pasta.</li>
+    <li>Things to do in Bali: Relax on beach, see rice fields, visit temples, enjoy nightlife, snorkel.</li>
+    <li>Things to do in Greece: See Parthenon, visit Santorini, explore Delphi, relax on beaches, eat Greek food.</li>
+    <li>Things to do in Japan: View blossoms, explore Tokyo, visit temples, soak in hot springs, eat sushi.</li>
+  </ul>
+</section>
+
+<section>
+    <h2>Edinburgh vs Venice</h2>
+    <table>
+        <tr>
+            <th>Place</th>
+            <th>Best Time to Visit</th>
+            <th>Budget</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+            <td>Edinburgh</td>
+            <td>June - August</td>
+            <td>$2,000</td>
+            <td>★★★★★</td>
+        </tr>
+        <tr>
+            <td>Venice</td>
+            <td>April - June</td>
+            <td>$2,500</td>
+            <td>★★★★☆</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Dream Destinations Album</h2>
+    <div class="gallery">
+        <img src="https://w0.peakpx.com/wallpaper/876/997/HD-wallpaper-edinburgh-castle-scotland-bing-edinburgh-scotland-castle.jpg" alt="Edinburgh Castle" draggable="true">
+        <img src="https://i0.wp.com/thattravelista.com/wp-content/uploads/2020/07/Italy-Venice-217.jpg?fit=1024%2C682&ssl=1" alt="Venice Canal" draggable="true">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk5vq4TWu3laSasTBmREUV-GyGltXrsvFn9Q&s" alt="Santorini Greece" draggable="true">
+    </div>
+    <div class="dropzone">
+        Drop here the picture of your dream destination!
+    </div>
+</section>
+
+<section>
+    <h2>Map Out Your Adventure</h2>
+    <form>
+        <label >Chosen Travel Season:</label>
+        <select>
+            <option>Spring</option>
+            <option>Summer</option>
+            <option>Autumn</option>
+            <option>Winter</option>
+        </select>
+
+        <label>Selected Vacation Time:</label>
+        <input type="date">
+
+        <label>Travel Expense Range ($):</label>
+        <input type="range" min="500" max="5000" step="100">
+    </form>
+</section>
+
+<section>
+    <h2>Adventure Spirit</h2>
+    <audio controls loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/09/audio_2b8ab90dc4.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+    <br><br>
+    <video width="420" height="240" controls>
+        <source src="C:\Users\ADMIN\Downloads\262603_tiny.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+</section>
+
+<footer>
+    <p>Created by FRANITHA EZHILMATHI! </p>
+</footer>
+
+</body>
+</html>
