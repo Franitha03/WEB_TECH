@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos Comics - Explore the Universe of Stories</title>
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="ex3.css">
+    <!-- INTERNAL CSS -->
+    <style>
+        h1 {
+            color: #ffcc00;
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: #ffcc00;
+            border-left: 4px solid #ff6b6b;
+            padding-left: 10px;
+        }
+
+        .comic-cover {
+            width: 280px;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #ffcc00;
+        }
+
+        .comic-item {
+            width: 45%;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+
+        .comic-item:hover {
+            transform: scale(1.02);
+        }
+
+        .comic-item h3 {
+            color: #ff6b6b;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- INLINE CSS -->
+    <header style="box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+        <h1 style="text-shadow: 0 2px 4px rgba(255, 204, 0, 0.5);">Cosmos Comics</h1>
+        <p style="font-style: italic; color: #ffcc00;">Exploring the universe one comic at a time!</p>
+    </header>
+    
+    <div class="container">
+        <h2 style="margin-top: 0;">Featured Cosmic Adventures</h2>
+        
+        <div class="comic-gallery">
+            <div class="comic-item" style="background: rgba(26, 26, 75, 0.6);">
+                <img src="download.jpeg" alt="Galactic Guardians" class="comic-cover">
+                <h3>Galactic Guardians #42</h3>
+                <p>The team faces their greatest challenge yet against the Void Emperor!</p>
+                <a href="https://en.wikipedia.org/wiki/The_Super_Powers_Team:_Galactic_Guardians" 
+                   style="display: inline-block; padding: 8px 16px; background: #ff6b6b; color: white; border-radius: 4px; margin-top: 10px;">
+                    Read More
+                </a>
+            </div>
+            
+            <div class="comic-item" style="background: rgba(26, 26, 75, 0.6);">
+                <img src="download (1).jpeg" alt="Star Rangers" class="comic-cover">
+                <h3>Star Rangers: Dark Nebula</h3>
+                <p>A mysterious signal from the Dark Nebula threatens the entire galaxy!</p>
+                <a href="#" 
+                   style="display: inline-block; padding: 8px 16px; background: #ffcc00; color: #0f0c29; border-radius: 4px; margin-top: 10px;">
+                    Read More
+                </a>
+            </div>
+        </div>
+        
+        <h2>Upcoming Releases</h2>
+        <table style="box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+            <tr>
+                <th style="text-align: center;">Title</th>
+                <th style="text-align: center;">Release Date</th>
+                <th style="text-align: center;">Writer</th>
+                <th style="text-align: center;">Artist</th>
+            </tr>
+            <tr>
+                <td><strong>Cosmic Defenders #15</strong></td>
+                <td>June 15, 2023</td>
+                <td>Alex Starwriter</td>
+                <td>Jamie Cosmos</td>
+            </tr>
+            <tr>
+                <td><strong>Nebula Knights: Origins</strong></td>
+                <td>June 22, 2023</td>
+                <td>Taylor Galaxy</td>
+                <td>Sam Stellar</td>
+            </tr>
+        </table>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Cosmos Comics. All rights reserved.</p>
+        <p style="color: #ffcc00; font-size: 0.9em;">Explore the infinite possibilities of storytelling!</p>
+    </footer>
+</body>
+</html>
