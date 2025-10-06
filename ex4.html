@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosmic Comics Fan Club Registration</title>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: radial-gradient(circle at top, #1b0034, #000);
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        background-image:
+            radial-gradient(white 1px, transparent 1px),
+            radial-gradient(white 1px, transparent 1px);
+        background-size: 50px 50px;
+        background-position: 25px 25px, 0 0;
+    }
+
+    .container {
+        max-width: 900px;
+        width: 100%;
+        background: rgba(20, 0, 40, 0.8);
+        border: 2px solid #a020f0;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 0 30px rgba(128, 0, 255, 0.5);
+    }
+
+    h1 {
+        text-align: center;
+        color: #ff66ff;
+        margin-bottom: 20px;
+        text-shadow: 0 0 15px #a020f0;
+    }
+
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #ffb6ff;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 2px solid #a020f0;
+        background: rgba(255, 255, 255, 0.9);
+        color: #000;
+        font-size: 15px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    button {
+        display: block;
+        margin: 20px auto 0;
+        background: linear-gradient(90deg, #a020f0, #ff66ff);
+        color: #fff;
+        border: none;
+        padding: 15px 40px;
+        border-radius: 40px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 0 15px #a020f0;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px #ff66ff;
+    }
+
+    .error {
+        color: #ff4b4b;
+        font-size: 14px;
+        margin-top: 5px;
+        display: none;
+    }
+
+    .success-message {
+        text-align: center;
+        color: #00ffcc;
+        margin-top: 20px;
+        font-weight: bold;
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .form-container {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>🪐 Cosmic Comics Fan Club Registration 🌠</h1>
+
+    <form id="comicForm">
+        <div class="form-container">
+            <div class="form-group">
+                <label for="name" class="required">Full Name</label>
+                <input type="text" id="name" placeholder="Tony Stark">
+                <div class="error" id="nameError">Enter at least 3 characters.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="required">Email</label>
+                <input type="email" id="email" placeholder="hero@cosmicmail.com">
+                <div class="error" id="emailError">Enter a valid email address.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="username" class="required">Username</label>
+                <input type="text" id="username" placeholder="StarLord_99">
+                <div class="error" id="usernameError">Username must be 4–15 characters.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="required">Password</label>
+                <input type="password" id="password" placeholder="••••••">
+                <div class="error" id="passwordError">Password must be 6+ characters with a number.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="required">Mobile Number</label>
+                <input type="tel" id="phone" placeholder="9876543210">
+                <div class="error" id="phoneError">Enter a valid 10-digit number.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="age" class="required">Age</label>
+                <input type="number" id="age" min="10" max="100" placeholder="18">
+                <div class="error" id="ageError">Enter age between 10 and 100.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="favHero" class="required">Favorite Superhero</label>
+                <input type="text" id="favHero" placeholder="Spider-Man">
+                <div class="error" id="favHeroError">Cannot be empty!</div>
+            </div>
+
+            <div class="form-group">
+                <label for="comicGenre">Favorite Comic Genre</label>
+                <select id="comicGenre">
+                    <option value="">Select Genre</option>
+                    <option>Superhero</option>
+                    <option>Fantasy</option>
+                    <option>Science Fiction</option>
+                    <option>Horror</option>
+                    <option>Manga</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="favColor">Favorite Cosmic Color</label>
+                <input type="color" id="favColor" value="#a020f0">
+            </div>
+
+            <div class="form-group">
+                <label for="favHeroine">Favorite Heroine</label>
+                <input type="text" id="favHeroine" placeholder="Captain Marvel">
+            </div>
+
+            <div class="form-group">
+                <label for="joinDate">Join Date</label>
+                <input type="date" id="joinDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="portfolio">Comic Art Portfolio (URL)</label>
+                <input type="url" id="portfolio" placeholder="https://myart.com">
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Rate Your Cosmic Energy</label>
+                <input type="range" id="rating" min="1" max="10" value="5">
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Why do you love Cosmic Comics?</label>
+                <textarea id="feedback" rows="3" placeholder="Because heroes inspire me..."></textarea>
+                <div class="error" id="feedbackError">Feedback too long! (Max 200 chars)</div>
+            </div>
+        </div>
+
+        <button type="submit">Join the Cosmic Crew 🚀</button>
+
+        <div class="success-message" id="successMessage">✅ Registration Successful! Welcome to the Cosmic Universe!</div>
+    </form>
+</div>
+
+<script>
+document.getElementById('comicForm').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    let isValid = true;
+
+    function showError(id, condition){
+        const error = document.getElementById(id + 'Error');
+        if(condition){
+            error.style.display = 'block';
+            isValid = false;
+        } else {
+            error.style.display = 'none';
+        }
+    }
+
+    const name = document.getElementById('name');
+    showError('name', name.value.trim().length < 3);
+
+    const email = document.getElementById('email');
+    const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+    showError('email', !emailRegex.test(email.value));
+
+    const username = document.getElementById('username');
+    showError('username', username.value.length < 4 || username.value.length > 15);
+
+    const password = document.getElementById('password');
+    const passRegex = /^(?=.*\\d).{6,}$/;
+    showError('password', !passRegex.test(password.value));
+
+    const phone = document.getElementById('phone');
+    const phoneRegex = /^\\d{10}$/;
+    showError('phone', !phoneRegex.test(phone.value));
+
+    const age = document.getElementById('age');
+    showError('age', age.value < 10 || age.value > 100 || !age.value);
+
+    const favHero = document.getElementById('favHero');
+    showError('favHero', favHero.value.trim() === '');
+
+    const feedback = document.getElementById('feedback');
+    showError('feedback', feedback.value.length > 200);
+
+    if(isValid){
+        document.getElementById('successMessage').style.display = 'block';
+        this.reset();
+    }
+});
+</script>
+</body>
+</html>
