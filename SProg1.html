@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cosmic Comics Online Booking</title>
+    <style>
+        body {
+            background-color: #e3f2fd;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+            display: inline-block;
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px #1976d2;
+        }
+        input, select, textarea {
+            margin: 8px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 80%;
+        }
+        button {
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0d47a1;
+        }
+        h2 {
+            color: #0d47a1;
+            text-shadow: 1px 1px 2px #64b5f6;
+        }
+    </style>
+</head>
+<body>
+    <h2>Book Your Cosmic Comics Experience</h2>
+    <form action="http://localhost:8080/WEBDEV/SProg1" method="dopost">
+        <input type="text" name="name" placeholder="Full Name" required><br>
+        <input type="email" name="email" placeholder="Email Address" required><br>
+        <input type="text" name="phone" placeholder="Phone Number" required><br>
+
+        <label>Select Comic Service:</label><br>
+        <select name="service">
+            <option value="Digital Comic Subscription">Digital Comic Subscription</option>
+            <option value="Exclusive Comic Preorder">Exclusive Comic Preorder</option>
+            <option value="Artist Meet & Greet">Artist Meet & Greet</option>
+            <option value="Signed Collector Editions">Signed Collector Editions</option>
+        </select><br>
+
+        <label>Preferred Genre:</label><br>
+        <select name="genre">
+            <option value="Superhero">Superhero</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Manga">Manga</option>
+        </select><br>
+
+        <label>Preferred Date:</label><br>
+        <input type="date" name="bookingDate" required><br>
+
+        <textarea name="notes" placeholder="Any special comic interests or artist requests?" rows="3"></textarea><br>
+
+        <button type="submit">Book Now</button>
+    </form>
+</body>
+</html>

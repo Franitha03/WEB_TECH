@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+    <servlet>
+        <servlet-name>SProg1</servlet-name>
+        <servlet-class>SProg1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SProg1</servlet-name>
+        <url-pattern>/SProg1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CookieDemo7A</servlet-name>
+        <servlet-class>CookieDemo7A</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CookieDemo7A</servlet-name>
+        <url-pattern>/CookieDemo7A</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>WelcomeCookie7A</servlet-name>
+        <servlet-class>WelcomeCookie7A</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WelcomeCookie7A</servlet-name>
+        <url-pattern>/WelcomeCookie7A</url-pattern>
+    </servlet-mapping>
+  <servlet>
+        <servlet-name>WelcomeUrl7B</servlet-name>
+        <servlet-class>WelcomeUrl7B</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WelcomeUrl7B</servlet-name>
+        <url-pattern>/WelcomeUrl7B</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UrlRewriteDemo7B</servlet-name>
+        <servlet-class>UrlRewriteDemo7B</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UrlRewriteDemo7B</servlet-name>
+        <url-pattern>/UrlRewriteDemo7B</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>HiddenFieldDemo7C</servlet-name>
+        <servlet-class>HiddenFieldDemo7C</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HiddenFieldDemo7C</servlet-name>
+        <url-pattern>/HiddenFieldDemo7C</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WelcomeHidden7C</servlet-name>
+        <servlet-class>WelcomeHidden7C</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WelcomeHidden7C</servlet-name>
+        <url-pattern>/WelcomeHidden7C</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SessionDemo7D</servlet-name>
+        <servlet-class>SessionDemo7D</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionDemo7D</servlet-name>
+        <url-pattern>/SessionDemo7D</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WelcomeSession7D</servlet-name>
+        <servlet-class>WelcomeSession7D</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WelcomeSession7D</servlet-name>
+        <url-pattern>/WelcomeSession7D</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>UserServlet8B</servlet-name>
+        <servlet-class>UserServlet8B</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet8B</servlet-name>
+        <url-pattern>/UserServlet8B</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GlobalServlet8A</servlet-name>
+        <servlet-class>GlobalServlet8A</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GlobalServlet8A</servlet-name>
+        <url-pattern>/GlobalServlet8A</url-pattern>
+    </servlet-mapping>
+  
+</web-app>
